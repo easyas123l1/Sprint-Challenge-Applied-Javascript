@@ -25,7 +25,6 @@ axios.get(`https://lambda-times-backend.herokuapp.com/articles`)
     return results.data.articles;
   })
   .then(results2 => {
-    console.log(results2);
     results2.bootstrap.forEach(e => {
       topics2.appendChild(createCard(e));
     })
