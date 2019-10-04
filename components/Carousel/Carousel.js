@@ -57,7 +57,7 @@ let currentCarouselIndex = 0;
 const rotateLeft = () =>{
   carouselImages[currentCarouselIndex].style.display = "none";
 
-  if(currentCarouselIndex == 0){
+  if(currentCarouselIndex === 0){
     currentCarouselIndex = carouselImages.length -1;
   }else{
     currentCarouselIndex--;
@@ -69,7 +69,7 @@ const rotateLeft = () =>{
 const rotateRight = () =>{
   carouselImages[currentCarouselIndex].style.display = "none";
 
-  if(currentCarouselIndex == carouselImages.length -1){
+  if(currentCarouselIndex === carouselImages.length -1){
     currentCarouselIndex = 0;
   }else{
     currentCarouselIndex++;
